@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MainPage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/product.css">
+</head>
+<body>
+  <header class = "header">
+    <div class="header-center">
+      <nav class="navigation-bar">
+        <a class="header-links" href="projectInfo.html">О проекте</a>
+        <a class="header-links" href="index.html">Магазин</a>
+      </nav>
+      <div class="project-name">
+        Чёрный рынок времён Блокадного Ленинграда
+      </div>
+      </div>
+    <div class="header-left">
+      <div class="cart">
+        <a href="cartPage.html">
+          <img src="logos/cart_icon.png" class="header-cart-icon" alt="no photo found">
+        </a>
+        <ul id="cart-items"></ul>
+      </div>
+      <div class="account">
+        <a href="accountPage.html">
+          <img src="logos/profile_icon.png" class="header-profile-icon" alt="no photo found">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="create-line"></div>
+  <main>
+    <div class="products">
+      <div class="product" data-product-id="1">
+        <img onclick="location.href='BreadPage.html'" class="product-image" src="ProductPhotos/bread.JPG">
+        <div class="product-info">
+          <p class="product-title">
+            Хлеб
+          </p>
+          <p class="product-description">
+            Описание: Цена за 100 грамм.
+          </p>
+          <p class="product-price">
+            30 &#x20bd
+          </p>
+          <div class="quantity">
+            <button class="minus-button" onclick="decrement(this)">-</button>
+            <input class="quantity-bar" type="text" value="1">
+            <button class="plus-button" onclick="increment(this)">+</button>
+          </div>
+          <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+      </div>
+      <div class="product" data-product-id="2">
+        <img onclick="location.href='PapirosiPage.html'" class="product-image" src="ProductPhotos/papirosi.png">
+        <div class="product-info">
+          <p class="product-title">
+            Папиросы "Южные"
+          </p>
+          <p class="product-description">
+            Описание: Цена за пачку.
+          </p>
+          <p class="product-price">
+            10 &#x20bd
+          </p>
+          <div class="quantity">
+            <button class="minus-button" onclick="decrement(this)">-</button>
+            <input class="quantity-bar" type="text" value="1">
+            <button class="plus-button" onclick="increment(this)">+</button>
+          </div>
+          <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+      </div>
+      <div class="product" data-product-id="3">
+        <img onclick="location.href='BurzhuikaPage.html'" class="product-image" src="ProductPhotos/burzhuika.png">
+        <div class="product-info">
+          <p class="product-title">
+            Буржуйка
+          </p>
+          <p class="product-description">
+            Эквиваленты: 1 пара сапог, серебряные мужские часы, 2кг хлеба
+          </p>
+          <p class="product-price">
+            500 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+      </div>
+    </div>
+      <div class="product" data-product-id="4">
+        <img onclick="location.href='ChocolatePage.html'" class="product-image" src="ProductPhotos/chocolate.png">
+        <div class="product-info">
+          <p class="product-title">
+            Шоколад
+          </p>
+          <p class="product-description">
+            Описание: цена за плитку на черном рынке
+          </p>
+          <p class="product-price">
+            140 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="5">
+        <img onclick="location.href='BrukvaPage.html'" class="product-image" src="ProductPhotos/brukva.png">
+        <div class="product-info">
+          <p class="product-title">
+            Брюква
+          </p>
+          <p class="product-description">
+            Описание: цена за килограмм
+          </p>
+          <p class="product-price">
+            30 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="6">
+        <img onclick="location.href='SpickiPage.html'" class="product-image" src="ProductPhotos/spichki.png">
+        <div class="product-info">
+          <p class="product-title">
+            Спички
+          </p>
+          <p class="product-description">
+            Описание: цена за коробок
+          </p>
+          <p class="product-price">
+            10 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="7">
+        <img onclick="location.href='KerosinPage.html'" class="product-image" src="ProductPhotos/kerosin.png">
+        <div class="product-info">
+          <p class="product-title">
+            Керосин
+          </p>
+          <p class="product-description">
+            Описание: цена за литр
+          </p>
+          <p class="product-price">
+            90 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="8">
+        <img onclick="location.href='DurandaPage.html'" class="product-image" src="ProductPhotos/duranda.png">
+        <div class="product-info">
+          <p class="product-title">
+            Дуранда
+          </p>
+          <p class="product-description">
+            Описание: цена за килограмм на рынке
+          </p>
+          <p class="product-price">
+            300 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="9">
+        <img onclick="location.href='MilkPage.html'" class="product-image" src="ProductPhotos/milk.png">
+        <div class="product-info">
+          <p class="product-title">
+            Молоко
+          </p>
+          <p class="product-description">
+            Описание: цена за литр
+          </p>
+          <p class="product-price">
+            50 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="product" data-product-id="10">
+        <img onclick="location.href='KleenkaPage.html'" class="product-image" src="ProductPhotos/kleenka.png">
+        <div class="product-info">
+          <p class="product-title">
+            Клеенка на стол
+          </p>
+          <p class="product-description">
+            Описание: цена на Сенном рынке.
+          </p>
+          <p class="product-price">
+            50 &#x20bd
+          </p>
+          <div class="quantity">
+            <div class="quantity">
+              <button class="minus-button" onclick="decrement(this)">-</button>
+              <input class="quantity-bar" type="text" value="1">
+              <button class="plus-button" onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart(this)">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </main>
+  <script src="JS/cart.js"></script>
+</body>
+</html>
