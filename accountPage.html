@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AccountPage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/accountPage.css">
+</head>
+<body>
+<header class = "header">
+  <div class="header-right">
+    <div class="cart-title">
+      Аккаунт
+    </div>
+  </div>
+  <div class="header-left">
+    <div class="cart">
+      <a href="index.html">
+        <img src="logos/back_icon2.png" class="back-icon" alt="no photo found">
+      </a>
+      <ul id="cart-items"></ul>
+    </div>
+    <div class="account">
+      <a href="accountPage.html">
+        <img src="logos/profile_icon.png" class="header-profile-icon" alt="no photo found">
+      </a>
+    </div>
+  </div>
+</header>
+<div class="create-line"></div>
+<p class="description">
+  Во время Блокады Ленинграда, которая продолжалась с сентября 1941 года по январь 1944 года, деньги потеряли свою реальную ценность из-за экстремальных условий блокады, голода и разрушений. Основные факторы, влияющие на дешевизну денег в этот период, включали:
+</p>
+<p class="description">
+  Гиперинфляция: В условиях войны и блокады центральное правительство СССР было вынуждено выпускать большое количество денежных средств, чтобы финансировать нужды фронта и гражданского населения. Это привело к гиперинфляции, и цены на товары и услуги стремительно росли.
+</p>
+<p class="description">
+  Дефицит продуктов: Блокада создала крайне непростые условия для жизни и выживания горожан. Продукты питания, медикаменты и другие необходимые товары были крайне дефицитными, и для их получения люди вынуждены были обменивать деньги на продукты на черном рынке по высоким ценам.
+</p>
+<p class="description">
+  Утрата доверия к деньгам: В таких условиях деньги перестали выполнять свою роль как средство обмена и меру стоимости. Люди больше доверяли реальным товарам и услугам, чем бумажным деньгам.
+</p>
+<p class="description">
+  В целом, можно сказать, что во время Блокады Ленинграда деньги были крайне нестабильными и дешевыми в смысле их покупательной способности, и они теряли свою ценность из-за экстремальных условий в городе. Важнейшими для выживания становились ресурсы, продукты и услуги, а не деньги.
+</p>
+<p class="description">
+  Вы можете выбрать, какое количество денег добавить на счёт и попробовать приобрести товары времен Блокадного Ленинграда.
+</p>
+<div class="balance">
+  <p class="balance-text">Баланс: <span id="balance">0</span> руб.</p>
+  <button class="balance-diff-button" onclick="updateBalance(500)">Пополнить на 500 руб.</button>
+  <button class="balance-diff-button" onclick="updateBalance(1000)">Пополнить на 1000 руб.</button>
+  <button class="balance-diff-button" onclick="updateBalance(3000)">Пополнить на 3000 руб.</button>
+  <button class="balance-diff-button" onclick="resetBalance()">Обнулить баланс.</button>
+</div>
+
+<script src="JS/accountPage.js"></script>
+</body>
+</html>

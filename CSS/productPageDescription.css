@@ -1,0 +1,16 @@
+.product-page-description {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    margin-right: 20px;
+}
+.text {
+    font-family: 'Merriweather', serif;
+}
+.product-price {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.centred-block {
+    text-align: center;
+}

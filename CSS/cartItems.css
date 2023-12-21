@@ -1,0 +1,32 @@
+.cart-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 20px;
+}
+.cart-item {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    grid-column-gap: 30px;
+    margin-bottom: 10px;
+}
+.cart-item-info {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 30px 30px 30px;
+}
+.cart-item img {
+    width: 200px;
+}
+
+.cart-item-info p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+.cart-item-name {
+    font-weight: 600;
+}
